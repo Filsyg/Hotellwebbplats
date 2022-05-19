@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hotel - Main Square">
+  <title>Hotel Warsaw</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <header>
+
+    <a href="index.html" class="namehead">Hotel Warsaw</a>
+    <br>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="findus.html" class="ahead ">Find us</a>
+      <a href="reservation.html" class="ahead">Reservation</a>
+      <a href="contact.html" class="ahead">Contact</a>
+      <a href="aboutus.html" class="ahead">About us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="contactmain">
+    <h1 class="contacth1">Contact</h1>
+    <section class="contactgrid">
+      <article class="leftcon">
+        <h2>Contact info</h2>
+        <br>
+        <h3>Phone calls open: Monday - Friday 9 AM - 3 PM | +48 069 420 420</h3>
+        <br>
+        <h3>Reception open hours: Monday - Sunday 9 AM - 6 PM</h3>
+        <br>
+        <h3> Mailbox answers: Monday - Friday 9 AM - 4 PM</h3>
+        <br>
+        <h3>After 3 PM we receive only emails. Please note that we answer mails between 1 - 2 business days.</h3>
+        <br>
+        <br>
+        <h3>Regards.</h3>
+        <h3>Hotel Warsaw</h3>
+      </article>
+
+      <article class="rightcon">
+        <form class="" action="sent.html" method="post">
+          <label for="firstname">First name</label>
+          <input id="firstname" type="text" name="firstname" value="">
+          <label for="lastname">Last name</label>
+          <input id="lastname" type="text" name="lastname" value="">
+          <label for="email">Email</label>
+          <input id="email" type="text" name="email" value="">
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" name="subject" value="">
+          <button type="submit">Send</button>
+        </form>
+      </article>
+  </main>
+
+  <br>
+
+  <footer>
+    <br>
+    <h3 class="footertext">Warsaw Hotel | Ulica Emilii Plater 45 | 69 420 Centralna | Phone number +48 069 420 420</h3>
+    <br>
+  </footer>
+  <script>
+    function myFunction() {
+      console.log("Test");
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+
+</html>
